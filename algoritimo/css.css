@@ -1,0 +1,42 @@
+#mapa
+{
+    border: 3px solid;
+    border-color:black;
+    width: 324px;
+    height: 324px;
+    margin:auto;
+    
+}
+#mapa div{
+    border: 1px solid;
+    border-color:black;
+    background-color: black;
+    width: 52px;
+    height: 52px;
+    float:left;
+    cursor: pointer;
+}
+#mapa input{
+    width: 48px;
+    height: 50px;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    text-emphasis-color: black;
+}
+input:disabled, select, textarea{
+    color:black;
+}
+#inputInicio,#inputFim,#posicaoRobo
+{
+    width: 105px;
+    border:none;
+}
+#posicao
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

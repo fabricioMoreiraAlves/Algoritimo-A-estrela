@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="mapa">
+    <div><input  id="p00" onclick="addremove(0,0)" name='' value='5'></div> <div><input  id="p01" onclick="addremove(0,1)" name='' value='6'></div>
+    <div><input  id="p02" onclick="addremove(0,2)" name='' value='3'></div> <div><input  id="p03" onclick="addremove(0,3)" name='' value='2'></div>
+    <div><input  id="p04" onclick="addremove(0,4)" name='' value='1'></div> <div><input  id="p05" onclick="addremove(0,5)" name='' value='0'></div>
+
+    <div><input  id="p10" onclick="addremove(1,0)" name='' value='6'></div> <div><input  id="p11" onclick="addremove(1,1)" name='' value='2'></div>
+    <div><input  id="p12" onclick="addremove(1,2)" name='' value='4'></div> <div><input  id="p13" onclick="addremove(1,3)" name='' value='3'></div>
+    <div><input  id="p14" onclick="addremove(1,4)" name='' value='1'></div> <div><input  id="p15" onclick="addremove(1,5)" name='' value='5'></div>
+
+    <div><input  id="p20" onclick="addremove(2,0)" name='' value='7'></div> <div><input  id="p21" onclick="addremove(2,1)" name='' value='9'></div>
+    <div><input  id="p22" onclick="addremove(2,2)" name='' value='5'></div> <div><input  id="p23" onclick="addremove(2,3)" name='' value='4'></div>
+    <div><input  id="p24" onclick="addremove(2,4)" name='' value='3'></div> <div><input  id="p25" onclick="addremove(2,5)" name='' value='2'></div>
+
+    <div><input  id="p30" onclick="addremove(3,0)" name='' value='8'></div> <div><input  id="p31" onclick="addremove(3,1)" name='' value='10'></div>
+    <div><input  id="p32" onclick="addremove(3,2)" name='' value='4'></div> <div><input  id="p33" onclick="addremove(3,3)" name='' value='5'></div>
+    <div><input  id="p34" onclick="addremove(3,4)" name='' value='4'></div> <div><input  id="p35" onclick="addremove(3,5)" name='' value='3'></div>
+     
+    <div><input  id="p40" onclick="addremove(4,0)" name='' value='9'></div> <div><input  id="p41" onclick="addremove(4,1)" name='' value='8'></div>
+    <div><input  id="p42" onclick="addremove(4,2)" name='' value='11'></div> <div><input  id="p43" onclick="addremove(4,3)" name='' value='5'></div>
+    <div><input  id="p44" onclick="addremove(4,4)" name='' value='5'></div> <div><input  id="p45" onclick="addremove(4,5)" name='' value='4'></div>
+
+    <div><input  id="p50" onclick="addremove(5,0)" name='' value='10'></div> <div><input  id="p51" onclick="addremove(5,1)" name='' value='7'></div>
+    <div><input  id="p52" onclick="addremove(5,2)" name='' value='8'></div> <div><input  id="p53" onclick="addremove(5,3)" name='' value='7'></div>
+    <div><input  id="p54" onclick="addremove(5,4)" name='' value='6'></div> <div><input  id="p55" onclick="addremove(5,5)" name='' value='5'></div>
+</div>
+<div id='posicao'>posição do robo:<input id='posicaoRobo'  disabled='true'></div>
+<div>
+    <input type="button" value="iniciar" onclick="iniciar(0)" id='iniciar'>
+    <input type="button" value="parar" onclick="iniciar(1)">
+    <input type="button" value="teste" onclick="iniciar(2)" id='teste'>
+    <input type="button" id="salvar" onclick="salvar()" value='salvar'>
+</div>
+
+<div>
+    <input type="checkbox" id="objetos" onclick="desabilitar(2)">colocar objetos</input>
+</div>
+<div>
+    <input type="checkbox" id="inicio" onclick="desabilitar(3)">ponto inicial:</input>
+    <input id='inputInicio' disabled='true'>
+</div>
+<div>
+    <input type="checkbox" id="fim" onclick="desabilitar(4)">ponto final:</input>
+    <input id='inputFim'  disabled='true'>
+</div>
+<div>carregar mapa <input type="file" id="carregar"></div>
+<script src="javascript.js"></script>
+</body>
+</html>
